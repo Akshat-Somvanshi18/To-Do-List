@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section id="todo">
+        <input type="text" placeholder="Enter Your Task Here" id="task_holder">
+        <button onclick="submit_task()" id="submit_btn">Submit</button>
+        <div>
+            <button id="btn1" onclick="task_complete()">Task Completed</button>
+            <button id="btn2" onclick="all_task()">All Tasks</button>
+            <button id="btn3" onclick="task_pending()">Task Pending</button>
+
+        </div>
+        <div id="task">
+            <div class="sub_task">
+                <p id="p1"></p>
+                <a onclick="delete_task(0)" class="delete_a"></a>
+                <input type="checkbox" class="check_task" onclick="check_anime(0)">
+            </div>
+            <div class="sub_task">
+                <p id="p2"></p>
+                <a onclick="delete_task(1)" class="delete_a"></a>
+                <input type="checkbox" class="check_task" onclick="check_anime(1)">
+            </div>
+            <div class="sub_task">
+                <p id="p3"></p>
+                <a onclick="delete_task(2)" class="delete_a"></a>
+                <input type="checkbox" class="check_task" onclick="check_anime(2)">
+            </div>
+            <div class="sub_task">
+                <p id="p4"></p>
+                <a onclick="delete_task(3)" class="delete_a"></a>
+                <input type="checkbox" class="check_task" onclick="check_anime(3)">
+            </div>
+            <div class="sub_task">
+                <p id="p5"></p>
+                <a onclick="delete_task(4)" class="delete_a"></a>
+                <input type="checkbox" class="check_task" onclick="check_anime(4)">
+            </div>
+            <div class="sub_task">
+                <p id="p6"></p>
+                <a onclick="delete_task(5)" class="delete_a"></a>
+                <input type="checkbox" class="check_task" onclick="check_anime(5)">
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
